@@ -9,7 +9,8 @@ const app = express();
 app.set("view engine", "ejs");
 
 //connect mongodb to node
-const uri="mongodb+srv://shashiTodoList:todolist@cluster0.lzerxgy.mongodb.net/?retryWrites=true&w=majority";
+// mongoose.connect("mongodb://127.0.0.1:27017/todolistDB");
+const uri="mongodb+srv://shashiTodoList:todolist@cluster0.lzerxgy.mongodb.net/todolistDB?retryWrites=true&w=majority";
 mongoose.connect(uri);
 console.log("Connecting to mongoDB");
 
